@@ -2,11 +2,22 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+@import "~@flaticon/flaticon-uicons/css/brands/all";
+@import "~@flaticon/flaticon-uicons/css/solid/rounded";
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@700&display=swap');
 
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}

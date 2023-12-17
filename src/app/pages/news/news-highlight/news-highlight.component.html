@@ -1,0 +1,8 @@
+<div class="grid grid-cols-3 grid-rows-3 px-4">
+    <img [src]="highlightedNews.image_url ? highlightedNews.image_url : 'https://picsum.photos/200/300'" alt="" class="sm:w-80 sm:h-80 row-start-1 row-end-4 col-start-1 col-end-4 sm:col-end-3">
+    <div class="row-start-2 row-end-4 col-start-1 col-end-4 sm:col-start-2 bg-slate-50 drop-shadow-xl p-6">
+        <h2 class="font-bold text-2xl font-saira">{{highlightedNews.title}}</h2>
+        <p>{{highlightedNews.creator[0]}}</p>
+        <p>{{highlightedNews.pubDate}}</p>
+    </div>
+</div>
