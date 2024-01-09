@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NewsData, NewsResult } from 'src/app/models/NewsData';
+import { NewsList } from 'src/app/models/NewsData';
 import { NewsService } from 'src/app/services/news.service';
 
 @Component({
@@ -7,7 +7,7 @@ import { NewsService } from 'src/app/services/news.service';
     templateUrl: './news.component.html',
 })
 export class NewsComponent implements OnInit {
-    newsData: NewsData = {results: []};
+    newsList: NewsList = [];
 
     constructor(private newsService: NewsService) {
     }
@@ -18,8 +18,8 @@ export class NewsComponent implements OnInit {
 
     getNews() {
         this.newsService.getNewsList().subscribe({
-            next: (res: NewsData) => {
-                this.newsData.results = res.results;
+            next: (res: NewsList) => {
+                this.newsList = res;
             }
         });
     }

@@ -1,13 +1,17 @@
-export type NewsResult = {
-    article_id: string;
-        title: string;
-        link: string;
-        creator: string[];
-        content: string;
-        pubDate: string;
-        image_url: string;
+type User = {
+    name: string;
+    profile_image_90: string;
 }
 
 export type NewsData = {
-    results: NewsResult[];
+    id: number;
+    title: string;
+    description: string;
+    cover_image: string;
+    tag_list: string[];
+    url: string;
+    user: User;
+    readable_publish_date: string;
 }
+
+export type NewsList = NewsData[];

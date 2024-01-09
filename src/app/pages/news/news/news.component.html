@@ -1,10 +1,10 @@
 <app-hero></app-hero>
 <div class="bg-slate-50">
     <div class="flex flex-wrap flex-col max-w-screen-xl gap-x-7 gap-y-10 mx-auto py-16 lg:flex-row lg:justify-around">
-        <app-news-highlight [highlightedNews]='this.newsData.results[0]' *ngIf="this.newsData" class="w-full lg:w-[70%]"></app-news-highlight>
+        <app-news-highlight [highlightedNews]='this.newsList[0]' *ngIf="this.newsList" class="w-full lg:w-[70%]"></app-news-highlight>
         <app-socials class="w-full lg:w-[25%] self-end mb-4"></app-socials>
         <ul class="list-none pl-0 flex justify-center gap-10 flex-wrap w-full lg:w-[70%]">
-            <app-news-cards *ngFor="let news of newsData.results.slice(1)" [newsData]="news"></app-news-cards>
+            <app-news-cards *ngFor="let news of newsList.slice(1)" [newsData]="news"></app-news-cards>
         </ul>
         <app-newsletter class="w-full lg:w-[25%] mt-8"></app-newsletter>
     </div>
