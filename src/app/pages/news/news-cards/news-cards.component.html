@@ -1,8 +1,10 @@
 <li class="grid grid-cols-3 grid-rows-3 px-4 max-w-sm">
-    <img [src]="newsData.image_url ? newsData.image_url : 'https://picsum.photos/200/300'" alt="" class="h-72 row-start-1 row-end-4 col-start-1 col-end-4">
+    <img [src]="newsData.cover_image ? newsData.cover_image : 'https://picsum.photos/300/200'" alt="" class="h-72 row-start-1 row-end-4 col-start-1 col-end-4">
     <div class="row-start-2 row-end-4 col-start-1 col-end-4 bg-white drop-shadow-xl p-6">
-        <h2 class="font-bold text-xl font-saira mb-4">{{newsData.title}}</h2>
-        <p class="text-sm">{{newsData.creator[0]}}</p>
-        <p class="text-sm">{{newsData.pubDate}}</p>
+        <a routerLink="/{{newsData?.id}}">
+            <h2 class="font-bold text-xl font-saira mb-4">{{newsData.title}}</h2>
+        </a>
+        <p class="text-sm">{{newsData.user.name}}</p>
+        <p class="text-sm">{{newsData.readable_publish_date}}</p>
     </div>
 </li>
