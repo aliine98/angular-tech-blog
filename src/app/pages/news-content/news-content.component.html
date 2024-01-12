@@ -1,0 +1,15 @@
+<div class="bg-slate-50 relative h-screen">
+    <img [src]="newsData?.cover_image" alt="" class="w-full h-96 brightness-75">
+    <div class="bg-white z-10 w-full md:w-3/4 md:max-w-max absolute top-60 md:left-1/2 md:-translate-x-1/2 p-8 grid gap-4">
+        <div class="flex items-center gap-4">
+            <img [src]="newsData?.user?.profile_image_90" [alt]="newsData?.user?.name" class="rounded-full w-10">
+            <span>{{newsData?.user?.name}}</span>
+        </div>
+        <h1 class="text-3xl font-bold mb-4">{{newsData?.title}}</h1>
+        <div class="flex flex-wrap gap-2">
+            <span *ngFor="let tag of newsData?.tag_list" class="bg-slate-400 text-white text-xs p-2 rounded-lg w-fit">{{tag}}</span>
+        </div>
+        <p class="">{{newsData?.description}}</p>
+        <a href="{{newsData?.url}}" target="_blank" rel="noopener noreferrer" class="justify-self-center no-underline py-3 px-5 bg-cyan-400 hover:bg-cyan-700 hover:text-white transition-all rounded-full block w-fit mt-5">Read More</a>
+    </div>
+</div>
