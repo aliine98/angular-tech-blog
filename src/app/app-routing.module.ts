@@ -6,7 +6,7 @@ import { AboutMeComponent } from './pages/about-me/about-me.component';
 import { CreditsComponent } from './pages/credits/credits.component';
 
 const routes: Routes = [
-    { path: '', component: NewsComponent },
+    { path: '', component: NewsComponent, pathMatch: 'full' },
     { path: 'article/:id', component: NewsContentComponent },
     { path: 'about-me', component: AboutMeComponent },
     { path: 'credits', component: CreditsComponent }
