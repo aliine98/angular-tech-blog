@@ -7,7 +7,7 @@ export type NewsData = {
     id: number;
     title: string;
     description: string;
-    cover_image: string;
+    cover_image: string | null;
     tag_list: string[];
     url: string;
     user: User;
