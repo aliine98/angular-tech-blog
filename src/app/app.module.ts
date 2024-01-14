@@ -10,9 +10,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { NewsContentComponent } from './pages/news-content/news-content.component';
 import { AboutMeComponent } from './pages/about-me/about-me.component';
+import { CreditsComponent } from './pages/credits/credits.component';
 
 @NgModule({
-    declarations: [AppComponent, HeaderComponent, NewsContentComponent, AboutMeComponent],
+    declarations: [AppComponent, HeaderComponent, NewsContentComponent, AboutMeComponent, CreditsComponent],
     imports: [
         BrowserModule,
         AppRoutingModule,
