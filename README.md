@@ -97,7 +97,7 @@ Mude o baseHref da config de deploy no arquivo  `angular.json`
 
 ## 📝 Licença
 
-![License](https://img.shields.io/github/license/aliine98/angular-tech-blog?&style=for-the-badge)
+![License](https://img.shields.io/github/license/aliine98/angular-tech-blog?&logo=m&style=for-the-badge)
 
 Feito com ❤️ por <a href="https://github.com/aliine98">Aline Bevilacqua</a>!
 
