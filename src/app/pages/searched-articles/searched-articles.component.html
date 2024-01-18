@@ -1,0 +1,8 @@
+<div class="min-h-screen flex flex-wrap gap-8 justify-center items-center bg-slate-300 pt-28 pb-20" *ngIf="newsList.length > 0; else notFound">
+    <app-news-cards *ngFor="let news of newsList" [newsData]="news"></app-news-cards>
+</div>
+<ng-template #notFound>
+    <div class="h-screen bg-slate-300 grid place-items-center">
+        <h1 class="bold text-3xl text-slate-800">No articles found for this search.</h1>
+    </div>
+</ng-template>

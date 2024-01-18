@@ -11,7 +11,7 @@ import { RouterModule } from '@angular/router';
 
 @NgModule({
     declarations: [HeroComponent, NewsComponent, SocialsComponent, NewsletterComponent, NewsHighlightComponent, NewsCardsComponent],
-    exports: [NewsComponent],
+    exports: [NewsComponent, NewsCardsComponent],
     imports: [CommonModule, MatIconModule, RouterModule],
 })
 export class NewsModule {}

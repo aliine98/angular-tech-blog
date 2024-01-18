@@ -11,16 +11,19 @@ import { HttpClientModule } from '@angular/common/http';
 import { NewsContentComponent } from './pages/news-content/news-content.component';
 import { AboutMeComponent } from './pages/about-me/about-me.component';
 import { CreditsComponent } from './pages/credits/credits.component';
+import { FormsModule } from '@angular/forms';
+import { SearchedArticlesComponent } from './pages/searched-articles/searched-articles.component';
 
 @NgModule({
-    declarations: [AppComponent, HeaderComponent, NewsContentComponent, AboutMeComponent, CreditsComponent],
+    declarations: [AppComponent, HeaderComponent, NewsContentComponent, AboutMeComponent, CreditsComponent, SearchedArticlesComponent],
     imports: [
         BrowserModule,
         AppRoutingModule,
         MatIconModule,
         BrowserAnimationsModule,
         NewsModule,
-        HttpClientModule
+        HttpClientModule,
+        FormsModule
     ],
     providers: [],
     bootstrap: [AppComponent],
