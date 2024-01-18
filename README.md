@@ -22,7 +22,9 @@
 ## 💻 Sobre o projeto
 
 Um blog de tecnologia com artigos que vem da api do Dev.to, feito com angular e tailwind.
-- Página inicial com todos artigos e página separada para cada artigo.
+- Página inicial com listagem dos artigos
+- Página separada para cada artigo com link para ler completo
+- Ferramenta de busca pelo título dos artigos
 
 ## 🎨 Screenshots
 
