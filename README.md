@@ -47,7 +47,7 @@ Um blog de tecnologia com artigos que vem da api do Dev.to, feito com angular e 
 
 ## 🛠 Tecnologias
 
-- [![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)](angular.io)
+- [![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)](https://angular.io/)
 - [![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 - [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 - [![Dev.to API](https://img.shields.io/badge/dev.to_api-0A0A0A?style=for-the-badge&logo=dev.to&logoColor=white)](https://developers.forem.com/api/)
